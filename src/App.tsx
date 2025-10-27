@@ -8,11 +8,13 @@ import Index from "./pages/Index";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import CategoryPage from "./pages/CategoryPage";
 import Promotions from "./pages/Promotions";
 import FreeBooks from "./pages/FreeBooks";
 import Cart from "./pages/Cart";
+import BookDetail from "./pages/BookDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +31,8 @@ const App = () => (
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/book/:id" element={<BookDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/promotions" element={<Promotions />} />
             <Route path="/free-books" element={<FreeBooks />} />
