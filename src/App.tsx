@@ -16,6 +16,8 @@ import FreeBooks from "./pages/FreeBooks";
 import Cart from "./pages/Cart";
 import BookDetail from "./pages/BookDetail";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,8 @@ const App = () => (
             <Route path="/free-books" element={<FreeBooks />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/categories/:slug" element={<CategoryPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
